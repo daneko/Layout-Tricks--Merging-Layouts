@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        android:id="@+id/okcancelbar_ok"
+        layout="@layout/okcancelbar_button" />
+
+    <include
+        android:id="@+id/okcancelbar_cancel"
+        layout="@layout/okcancelbar_button" />
+
+</merge>
