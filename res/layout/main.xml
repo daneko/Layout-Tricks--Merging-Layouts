@@ -1,4 +1,5 @@
-<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:okCancelBar="http://schemas.android.com/apk/res/com.example.android.merge" >
 
     <ImageView
         android:layout_width="fill_parent"
@@ -6,14 +7,14 @@
         android:scaleType="center"
         android:src="@drawable/golden_gate" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.example.android.merge.OkCancelBar
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="20dip"
+        android:layout_gravity="bottom"
         android:background="#AA000000"
-        android:padding="12dip"
-        android:text="Golden Gate"
-        android:textColor="#ffffffff" />
+        okCancelBar:cancelLabel="Don&apos;t save"
+        android:gravity="center_horizontal"
+        okCancelBar:okLabel="Save"
+        android:paddingTop="8dip" />
 
 </merge>
